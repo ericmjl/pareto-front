@@ -1,0 +1,40 @@
+name: pareto-front
+channels:
+  - conda-forge
+dependencies:
+  # Core stack
+  - python=3.9
+  - build
+  - bumpversion
+  - ipykernel
+  - ipywidgets
+  - jupyter
+  - jupyterlab
+  - mamba
+  - pip
+  - twine
+  # Standard PyData stack
+  - numpy
+  - pandas
+  - scipy
+  - multipledispatch
+  # Utilities
+  - pyprojroot
+  - python-dotenv
+  # Software testing
+  - pytest
+  # Code Style Tools
+  - black
+  - darglint
+  - flake8
+  - interrogate
+  - pre-commit
+  - pylint
+  # Documentation
+  - mkdocs
+  - mkdocs-material
+  - mkdocstrings
+  # pip dependencies
+  - pip:
+      # Place packages that cannot be installed by conda in this section.
+      - mknotebooks
