@@ -1,3 +1,3 @@
 # Top-level API for pareto-front
 
-::: pareto-front
+::: pareto_front

@@ -38,7 +38,7 @@ plugins:
             docstring_style: restructured-text
       # custom_templates: templates
       watch:
-        - pareto-front
+        - pareto_front
 # Taken from here: https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
 markdown_extensions:
   - codehilite
@@ -59,11 +59,9 @@ extra:
   social:
     - icon: "fontawesome/brands/github"
       link: "https://github.com/ericmjl"
-    
+
     - icon: "fontawesome/brands/twitter"
       link: "https://twitter.com/ericmjl"
-    
-    
+
     - icon: "fontawesome/brands/linkedin"
       link: "https://linkedin.com/in/ericmjl"
-    
