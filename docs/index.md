@@ -25,6 +25,5 @@ mkdocs serve
 
 ## Why this project exists
 
-Place your reasons here for why this project exists.
-
-What benefits does this project give to users?
+This project exists to provide a small library of functions
+that calculate pareto fronts on data.
