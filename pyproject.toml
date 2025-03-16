@@ -110,39 +110,15 @@ lint = "pre-commit run --all-files"
 docs = "mkdocs serve"
 build = "python -m build"
 
-[tool.pixi.dependencies]
-python = ">=3.9"
-numpy = "*"
-pandas = "*"
-scipy = "*"
-multipledispatch = "*"
-pyprojroot = "*"
-python-dotenv = "*"
-
-[tool.pixi.pypi-dependencies]
-mknotebooks = "*"
-
 [tool.pixi.feature.dev.dependencies]
 pytest = "*"
 pytest-cov = "*"
-black = "*"
-darglint = "*"
-flake8 = "*"
-interrogate = "*"
-pre-commit = "*"
-pylint = "*"
-ipykernel = "*"
-ipywidgets = "*"
-jupyter = "*"
-jupyterlab = "*"
-build = "*"
-bumpversion = "*"
-twine = "*"
 
 [tool.pixi.feature.docs.dependencies]
 mkdocs = "*"
 mkdocs-material = "*"
 mkdocstrings = "*"
+mknotebooks = "*"
 
 [tool.pixi.environments]
 default = {features = [], solve-group = "default"}
