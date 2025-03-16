@@ -75,7 +75,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          pip install -U llamabot
+          pip install -U llamabot[cli]
           llamabot configure default-model --model-name="${{ secrets.DEFAULT_LANGUAGE_MODEL }}"
           llamabot git write-release-notes
 
