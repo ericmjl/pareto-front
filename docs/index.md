@@ -4,6 +4,33 @@ Welcome to the repository for the pareto-front project!
 
 ## Quickstart
 
+### Using pixi (recommended)
+
+This project uses pyproject.toml for both Python packaging and pixi configuration.
+
+```bash
+# Install pixi if you don't have it already
+curl -fsSL https://pixi.sh/install.sh | bash
+
+# Create a development environment
+pixi install
+
+# Activate the environment
+pixi shell
+
+# Run tests
+pixi run test
+
+# Build documentation
+pixi run docs
+
+# Development environment with additional tools
+pixi install --environment dev
+
+# Documentation environment
+pixi install --environment docs
+```
+
 <!-- uncomment if relevant
 ### Install from PyPI
 
