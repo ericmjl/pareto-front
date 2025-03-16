@@ -93,7 +93,7 @@ jobs:
 
       - name: Build package
         run: |
-          uv build -w -s
+          uv build --sdist --wheel
 
       - name: Publish package
         uses: pypa/gh-action-pypi-publish@release/v1
