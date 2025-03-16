@@ -1,4 +1,5 @@
 """Pareto-front calculation functions."""
+
 from typing import Union
 
 import numpy as np
@@ -23,7 +24,7 @@ def pareto_indices(data: pd.DataFrame) -> pd.Index:
         if i >= n:
             break
         # We use `.iloc` here b/c the sorted order of values is important.
-        undominated[i + 1 : n] = (data.iloc[i + 1 :] > data.iloc[i]).any(1)
+        undominated[i + 1 : n] = (data.iloc[i + 1 :] > data.iloc[i]).any(axis=1)
         pareto_front_indices = pareto_front_indices[undominated[:n]]
         data = data.loc[undominated[:n]]
     return pareto_front_indices
