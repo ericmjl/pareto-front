@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pareto-front"
-version = "0.0.1"
+version = "0.0.2"
 description = "A package for computing Pareto fronts"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -99,7 +99,7 @@ profile = "black"
 # Pixi configuration
 [tool.pixi.project]
 name = "pareto-front"
-version = "0.0.1"
+version = "0.0.2"
 description = "A package for computing Pareto fronts"
 channels = ["conda-forge"]
 platforms = ["osx-64", "osx-arm64", "linux-64", "win-64"]
